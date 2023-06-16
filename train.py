@@ -17,7 +17,7 @@ def calcuate_accu(big_idx, targets):
 
 
 # train func
-def train(epoch):
+def train(epoch, train_dataloader, model):
     tr_loss = 0
     n_correct = 0
     nb_tr_steps = 0
@@ -76,7 +76,7 @@ def train(epoch):
 
 
 # validation
-def evaluation(epoch):
+def evaluation(epoch, val_dataloader, model):
     val_loss = 0
     n_correct = 0
     nb_tr_steps = 0
@@ -179,10 +179,12 @@ if __name__ == "__main__":
 
     for epoch in range(EPOCHS):
 
-        training_loss, training_accuracy = train(epoch)
+        training_loss, training_accuracy = train(
+            epoch, train_dataloader, model)
         train_loss.append(training_loss)
         train_acc.append(training_accuracy)
-        validation_loss, validation_accuracy = evaluation(epoch)
+        validation_loss, validation_accuracy = evaluation(
+            epoch, val_dataloader, model)
 
         if validation_accuracy > best_accuracy:
             print("Saving model at accuracy={:.3f}".format(

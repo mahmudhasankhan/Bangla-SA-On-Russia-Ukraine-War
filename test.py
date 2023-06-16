@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report
 from dataloader import TestDataloader
 
 
-def test():
+def test(test_dataloader, model):
     target_list = []
     predictions = []
     model.eval()
@@ -58,5 +58,5 @@ if __name__ == "__main__":
     model = model.to(device)
     model.eval()
 
-    y_pred, y_true = test()
+    y_pred, y_true = test(test_dataloader, model)
     print(classification_report(y_true, y_pred))
