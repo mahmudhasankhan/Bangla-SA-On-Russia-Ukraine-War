@@ -23,7 +23,7 @@ The Bangla Language ranks seventh in the list of most spoken languages with 265 
 
 ## Dataset 
 We annotated 10,861 comments out of which 5,011 data were Pro-Russia,
-1,211 were Pro-Ukraine, and 4,639 were Neutral.
+1,211 were Pro-Ukraine, and 4,639 were Neutral. You can download our dataset on our github releases.
 
 <p>
     <img src="./assets/pie_chart.png" width="300" alt="Class Distribution">
@@ -46,10 +46,10 @@ score and AIC, BanglaBERT outperforms baseline and all the other transformer-bas
 </p>
 
 ## Authors
-1. **Mahmud Hasan**
-1. **Labiba Islam**
-1. **Ismat Jahan**
-1. **Sabrina Mannan Meem**
-1. **Rashedur M. Rahman**
+1. [Mahmud Hasan](https://scholar.google.com/citations?user=BEG4_pQAAAAJ&hl=en)
+1. [Labiba Islam](https://scholar.google.com/citations?user=Sqi2BSYAAAAJ&hl=en)
+1. Ismat Jahan
+1. Sabrina Mannan Meem
+1. [Rashedur M. Rahman](https://scholar.google.com/citations?user=L9S6rlUAAAAJ&hl=en)
 
 
